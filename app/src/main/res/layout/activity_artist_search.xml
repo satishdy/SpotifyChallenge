@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.satish.myartist.activity.ArtistSearchActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="false"
+        app:expanded="false"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Search For Artist"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/textView"
+            android:layout_gravity="center_vertical"
+            tools:text="Search For Artist"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:typeface="normal"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.14" />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_artist_search" />
+
+</android.support.design.widget.CoordinatorLayout>
