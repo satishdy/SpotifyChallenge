@@ -27,7 +27,7 @@ public  class Utils {
 
     public static Cache provideOkHttpCache(Application application) {
         int cacheSize = 10 * 1024 * 1024; // 10 MiB
-        Cache cache = new Cache(new File(application.getCacheDir(), "carmudicached"), cacheSize);
+        Cache cache = new Cache(new File(application.getCacheDir(), "examplecached"), cacheSize);
         return cache;
     }
 
